@@ -1,11 +1,11 @@
 const express = require("express");
 const user = require("../routes/user");
-const post = require("../routes/post");
-const comment = require("../routes/comment");
+const book = require("../routes/book");
+const lending = require("../routes/lending");
 
 module.exports = function (app) {
     app.use(express.json())
-        .use("/post", post)
+        .use("/book", book)
         .use("/user", user)
-        .use("/comment", comment);
+        .use("/lending", lending);
 };
