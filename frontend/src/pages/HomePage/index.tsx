@@ -1,6 +1,10 @@
+import PageEnveloper from "../../components/PageEnveloper";
+
 const HomePage = () => {
     return (
-        <div>HomePage</div>
+        <PageEnveloper>
+            teste
+        </PageEnveloper>
     )
 }
 
